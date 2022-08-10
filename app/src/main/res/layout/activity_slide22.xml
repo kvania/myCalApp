@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".slide2_2">
+
+    <EditText
+        android:id="@+id/UTEXT"
+        android:layout_width="414dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/U" />
+
+    <TextView
+        android:id="@+id/U"
+        android:layout_width="411dp"
+        android:layout_height="32dp"
+        android:text="Usia"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BBTEXT" />
+
+    <TextView
+        android:id="@+id/JK"
+        android:layout_width="411dp"
+        android:layout_height="32dp"
+        android:text="Jenis Kelamin"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/RG"
+        android:layout_width="405dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/JK">
+
+        <RadioButton
+            android:id="@+id/LK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Laki - laki" />
+
+        <RadioButton
+            android:id="@+id/PR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Perempuan" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/RG2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AO">
+
+        <RadioButton
+            android:id="@+id/S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Sering" />
+
+        <RadioButton
+            android:id="@+id/KK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Kadang - kadang" />
+
+        <RadioButton
+            android:id="@+id/SJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Sangat Jarang" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/AO"
+        android:layout_width="411dp"
+        android:layout_height="32dp"
+        android:text="Aktivitas Olahraga"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UTEXT" />
+
+    <TextView
+        android:id="@+id/TB"
+        android:layout_width="411dp"
+        android:layout_height="32dp"
+        android:text="Tinggi Badan"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/RG"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/BB"
+        android:layout_width="411dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Berat Badan"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TBTEXT" />
+
+    <EditText
+        android:id="@+id/TBTEXT"
+        android:layout_width="414dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TB" />
+
+    <EditText
+        android:id="@+id/BBTEXT"
+        android:layout_width="414dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BB" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="194dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="32dp"
+        android:text="Hitung"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RG2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
